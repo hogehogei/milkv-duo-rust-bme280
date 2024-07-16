@@ -1,0 +1,11 @@
+[package]
+name = "milkv-duo-rust-i2c"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+thiserror = { version = "1.0.61" }
+anyhow = { version = "1.0.86", features = ["backtrace"] }
+i2cdev = "0.6.1"
+tracing = { version = "0.1.40", features = ["async-await"] }
+tracing-subscriber = "0.3.18"
