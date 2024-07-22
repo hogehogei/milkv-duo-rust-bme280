@@ -1,5 +1,5 @@
 [package]
-name = "milkv-duo-rust-i2c"
+name = "milkv-duo-rust-bme280"
 version = "0.1.0"
 edition = "2021"
 
@@ -9,3 +9,7 @@ anyhow = { version = "1.0.86", features = ["backtrace"] }
 i2cdev = "0.6.1"
 tracing = { version = "0.1.40", features = ["async-await"] }
 tracing-subscriber = "0.3.18"
+chrono = "0.4.38"
+rumqttc = "0.24.0"
+serde = { version = "1.0.204", features = ["derive"] }
+serde_json = "1.0.120"
