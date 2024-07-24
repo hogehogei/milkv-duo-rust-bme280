@@ -8,7 +8,8 @@
   ```
 
 ## Milk-V Duo 設定
-- ポート設定
+- ポート設定  
+  /dev/i2c-1 を BME280 との通信に使用する  
 ```
 [root@milkv-duo]~# duo-pinmux -w GP8/IIC1_SDA
 [root@milkv-duo]~# duo-pinmux -w GP9/IIC1_SCL
