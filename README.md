@@ -13,7 +13,7 @@
 [root@milkv-duo]~# duo-pinmux -w GP8/IIC1_SDA
 [root@milkv-duo]~# duo-pinmux -w GP9/IIC1_SCL
 ```
-- 動作確認方法
+- 動作確認方法  
   Linux ホストマシンに MilkV-Duo をつないで確認。
   - ネットワーク設定  
     Linux ホスト側
