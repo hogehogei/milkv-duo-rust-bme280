@@ -15,7 +15,7 @@ $ duo-pinmux -w GP9/IIC1_SCL
 ```
 - 動作確認方法
   Linux ホストマシンに MilkV-Duo をつないで確認。
-  - ネットワーク設定
+  - ネットワーク設定  
     Linux ホスト側
     MilkV-Duo をUSB接続し、"usb0" として見えていること    
     外側のインターネットは eth0 として見えていること    
@@ -68,7 +68,8 @@ $ duo-pinmux -w GP9/IIC1_SCL
     $ route add default gw 192.168.42.2
     $ echo "nameserver 8.8.8.8" >> /etc/resolv.conf
     ```
-
+    
+  - バイナリの実行  
     MilkV-Duo でバイナリを実行する場合、以下のように環境変数、TLS証明書を配置すること   
     ```
     $ export AWS_IOT_CLIENT_ID='your client id'
