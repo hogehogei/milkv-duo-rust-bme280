@@ -1,3 +1,6 @@
+## 概要
+  I2C 接続した BME280 から温度データを読み取り、AWSにMQTTSで送信するサンプルプログラム。  
+  
 ## ビルド方法
   事前準備は下記URLのREADME参照  
   https://github.com/hogehogei/milkv-duo-rust-helloworld
@@ -72,7 +75,8 @@
     ```
     
   - バイナリの実行  
-    MilkV-Duo でバイナリを実行する場合、以下のように環境変数、TLS証明書を配置すること   
+    MilkV-Duo でバイナリを実行する場合、以下のように環境変数、TLS証明書を配置すること  
+    AWS 側では "iot/topic" で subscribe しておけば受信できる  
     ```
     [root@milkv-duo]~# export AWS_IOT_CLIENT_ID='your client id'
     [root@milkv-duo]~# export AWS_IOT_ENDPOINT='your AWS API endpoint URL'
